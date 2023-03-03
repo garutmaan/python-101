@@ -7,14 +7,17 @@ shopping_cart = {
     "SMG-1": 0,
     "Magnum 5.0 Sniper": 0,
     "AK-203": 0,
-    "Machine Gun": 0
+    "Machine Gun": 0,
+    "Shot Gun": 0
+
 }
 
 while (True):
     print("MENU : \n===================")
     print("1. Rifles")
     print("2. Machine Gun")
-    print("3. Exit")
+    print("3. Shot Gun")
+    print("4. Exit")
 
     option_value = int(input("Choose One Option : "))
 
@@ -45,6 +48,11 @@ while (True):
         print(json.dumps(shopping_cart, indent=4))
 
     elif option_value == 3:
+        shopping_cart["Shot Gun"] += 1
+        print("Your Shopping Cart : ")
+        print(json.dumps(shopping_cart, indent=4))
+
+    elif option_value == 4:
         print("Thanks for shopping..")
         exit(0)  # exit with success
     else:
