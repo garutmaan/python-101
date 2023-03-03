@@ -1,0 +1,135 @@
+DAY6.TXT
+
+OPERATORS CONTINUED...
+
+4. BIT-WISE
+
+2 - DECIMAL REPRESENTATION
+
+10 - BINARY REPRESENTATION OF 2 IN 2 BITS
+
+-> VOLTAGE LEVELS : 0V / 5V
+
+0V = 0 OFF
+5V = 1 ON
+
+BITS REPRESENTATION: BINARY
+
+0 / 1
+
+2^n, n is the number of bits to represent data.
+
+1. n=1,
+2^1 = 2
+
+2 numbers only.
+
+0 | 1
+
+2. n=2
+
+2^2 = 4
+
+4 numbers only.
+
+00 - 0
+01 - 1
+10 - 2
+11 - 3
+
+3. n=3
+
+2^3 = 8 numbers only
+
+000 - 0
+001 - 1
+010 - 2
+011 - 3
+100 - 4
+101 - 5
+110 - 6
+111 - 7
+
+4. n=4  ( nibble )
+
+2^4 = 16
+
+0000 - 0
+0001 - 1
+0010 - 2
+0011 - 3
+0100 - 4
+0101 - 5
+0110 - 6
+0111 - 7
+1000 - 8
+1001 - 9
+1010 - 10
+1011 - 11
+1100 - 12
+.
+.
+.
+.
+1111 - 15
+
+5. n = 8 bits ( byte )
+2 ^ 8 = 256 (0-255)
+
+6. 1024 bytes => 1 KB
+   1024 KB => 1 MB
+   1024 MB = 1 GB
+   1024 GB = 1 TB
+   .
+   .
+   .
+   .
+
+- bit wise operators:
+
+we can apply these only for int and boolean types.
+
+ASCII - American Standard for Information Interchange
+
+1. & -> BIT-WISE AND (if both bits are true, then only it will give true)
+2. | -> BIT-WISE OR (if any one bit is true, it gives true)
+3. ^ -> XOR (if bits are different, then true else false)
+4. ~ -> bit-wise compliment operator 
+5. << -> Left Shift operator
+6. >> -> Right Shift operator
+
+
+Left Shift Operator: 
+
+shifts a number by 'n' bits.
+
+syntax :
+
+number << n-bit
+
+ex:
+
+2 << 1 (shift 2 to left, by 1 bit)
+
+01 << 1
+
+
+5. ASSIGNMENT OPERATORS:
+
+- they assign given value inside a memory location (variable)
+- it can go with other type of operators as well which return some value.
+
+1. = (Assign)
+2. += (Add and assign)
+3. -= (minus and assign)
+4. /= (divide and assign)
+5. *= (multiply and assign)
+6. %= (take remainder and assign)
+.
+.
+.
+.
+
+ex:
+
+

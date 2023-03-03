@@ -1,0 +1,55 @@
+DAY7.TXT
+
+1. GITHUB
+
+lINUS TORVALDS  - designed linux,
+
+1. git - software designed to keep a track of changes in a project or a specific folder or workspace
+
+git - work-flow (way of maintaining source code or project files)
+
+ONE PIECE OF LAND -> SOLD TO PERSON A, 
+					 SOLD TO PERSON B,
+
+2. GitHub (Central) / BitBucket / GitLab
+
+How to make a Git Powered or Git Managed or Version Controlled Software Development ? 
+
+Step : 
+
+1. Install and setup Git software in your system/development system
+2. Create your project folder
+3. Initialize your folder as Git Workspace or Git Repo
+4. Add Files
+5. Stage Files
+6. Commit Files
+7. If required, upload / push the current workspace to GitHub Central Repo.
+
+1. Create a git hub account
+2. Install git 
+3. Sample Git/GitHub Project
+
+Simple Git Commands:
+1. git init // initializes a given folder as git repo, only run once in the beginning
+2. git status // gives an overview of what files are staged or unstaged
+3. git add <filesnames> // to stage or track the changes before commtiing
+4. git commit -m "<message>" // finalizes the changes and creates a commit id to track the changes
+5. git push origin <branch name> // to push your local repo to central
+6. git pull branch name // pull a workspace or changes from central to local
+7. git fetch // fetch or pull metadata of other branches from central to local
+8. git merge // combine two branches changes into single branch
+9. git log // gives all commit information or history
+10. git log --oneline // gives all the history in single line with commit id and message
+11. git show <commit id> // shows complete info of that commit id or all the changes at that point of time
+
+
+Pushing Local Repo to GitHub Account Central REpo:
+
+1. Create GitHub Account with your email id and password
+2. Create username and password
+3. Create a Token
+4. Create A GitHub Repo 
+5. Sync the Repo to local
+6. Configure Local Repo Settings
+7. Add all your files to this local folder
+8. run git push

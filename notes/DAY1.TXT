@@ -1,0 +1,89 @@
+DAY1.TXT
+
+INSTALLING PYTHON : FROM https://www.python.org/
+WRITING PYTHON CODE: 
+1. TEXT EDITOR
+2. SUBLIME TEXT
+3. NOTEPAD ++
+4. vi (linux)
+5. vim (linux)
+6. nano (linux)
+7. IDE
+8. IDLE (WINDOWS)
+
+RUNNING PYTHON
+1. CLI : python3 <filename.py>
+2. CLI PYTHON DIRECT INTERPRETER 
+   terminal > python3 
+   python3>> <code> (one line)
+3. IDE - integrated development environment
+4. IDLE (windows)
+
+1. Basic Programs
+print("Hello")
+
+# -> comment line (single line)
+(just for documentation, it is neutral line
+in a code)
+
+'''
+Multi line
+comments
+'''
+
+"""
+multi line comment
+lines
+"""
+
+1. Print Hello
+2. Variables - Name of a location where we can keep data.
+What variables contain?
+ans : Data
+What type of data ? #Data Types
+ans : 
+in python there are 
+14 Data types
+
+2 categories:
+
+1. Primitive : they are independent, atomic and original data types
+	int,
+	float,
+	double,
+	string,
+	boolean
+	complex : 10 + 9i, 9 + 8j
+2. Derived / Referenced : data types which are dependent on primitive data types.
+
+	List
+	Tuple
+	Set
+	Dictionary
+	range()
+
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+
+- how to know data type inside python code?
+
+type() function.
+# displays what type of data is stored inside any variable or what type of data is that value.
+
+3. Expressions - instruction to python to perform some operations.
+
+operations:
+- mathematical
+- logical
+- relational
+- arithmetic
+- conditional
+- bit-wise
+- ternery (if password_correct then login else error)
