@@ -1,0 +1,232 @@
+PYTHON-D2-23-04-2023.TXT
+=========================
+
+Coding in Python:
+
+1. import statements (optional, if required use)
+2. statements
+3. global variables
+4. statements
+5. function definitions
+6. statements
+
+Statement : any instruction or line that can be executed.
+
+1. Write from scratch (You group all your statements yourself, in a custom way)
+
+2. Write your code by using existing libraries/modules/packages
+- mostly required to build projects or complex codes
+
+ - Structure - Format
+ - How to Speak - how to Execute
+ - Alphabets - tokens
+ - Words - Identifiers, Variables, Keywords
+ - Paragraphs - Blocks, Functions etc
+ - Grammar - Syntax
+ - Sentences - Statements, instructions
+ - Vocabulary - Libraries
+
+
+
+Tokens in Python:
+-------------------
+smallest unit of code, building blocks of code
+
+1. alphabets 
+A-Z
+a-z
+
+combinations of english alphabets 
+
+2. Numbers
+
+0-9
+combinations of numbers
+
+3. Special characters
+< , > , . , ?, : " ' ] [ } { .. etc
+
+Identifiers:
+
+- It is the combination of tokens to provide a name / to name any specific item, function or block inside python code
+- used to identify anything in python
+- Rules to form identifier:
+- A valid identifier should follow below rules:
+
+1. It should start from alphabet either A-Z or a-z or Comination
+2. It should not start from numbers
+3. It can start from a special character "_", nothing other than this
+4. But, it can contain or end with numbers
+5. in python especially, the naming convention is :
+	- we follow the use of "_" to separate multiple words in the name instead of using a space
+	- we usually write identifiers in all smaller case
+	- we use CAPITAL case only when we want to create CONSTANTS
+	- the developers infer that the identifier with all capital case is a constant
+
+6. Some words or names in python are RESERVED or cannot be used as identifiers, they are assigned some special meaning already by python developers. These type of reserved words are also called as Python Keywords.
+ We cant use these words as identifiers.
+
+Ex:
+int
+float
+while
+if
+else
+elif
+for
+pass
+True
+False etc.
+
+Examples of Valid, Invalid identifiers:
+1. 123ABC - INVALID
+2. abc_123 - VALID
+3. _hello_world - VALID
+4. World##Hello - INVALID
+5. lowKey_Mustard_value - VALID (but avoid camel casing)
+6. speed_of train - INVALID
+7. %TEMP% - INVALID
+8. __developer_mania - VALID
+9. (developer_world) - INVALID
+10. if - INVALID (because it is a reserved word)
+11. True - INVALID
+12. forHanish - VALID
+
+Why Identifiers?
+- we use them to identify something in the python program, with that name.
+- we can use identifiers to name a variable, function, constant, block of code, or anything
+
+
+Variable:
+- It is an unit in python code which has capability to hold the value of any data
+- the value inside this can change any time or can be updated any time
+- That is why it is called as "Vary-able" => "variable"
+- We can use identifiers to name a variable
+- so that we can identify and use it to handle data
+- every variable will have it's own space or location inside the program memory/storage
+- variable can hold values of different types of data
+
+Data-Types:
+The types of data which we can handle or use or manipulate in python.
+
+There are around 14 different types of data that we can use or represent in python:
+
+1.  int - this data type is used to represent whole numbers.
+
+2.  float - for decimal values or fraction values which has "decimal-point"
+3.  complex - used to represent complex numbers (for maths) 
+4.  bool - used to represent true or false type of values (True, False) => equivalent to 0 or 1 / OFF or ON
+
+5.  str : to represent a group or characters or a string or a sentence or a word 
+
+6.  bytes : used to represent group of bytes, elements cant be modify
+allowed values 0-256 (ascii values)
+
+7.  bytearray : same as bytes but values can be changed
+
+8.  range : used to represent or store a sequence of numbers, but we need to iterate this to use the individual values present in it. acts like a collection of numbers, we can use it in loops.
+
+9.  list : Used to store or collect data as a list or bag
+		   the data in list can be modified. items/data storage or insertion order is preserved.
+
+		   it is a collection
+ex:
+["hanish", 1000, True]
+
+10. tuple : same as list but items in this cant be modified
+
+ex:
+("hanish", 1000, True)
+
+11. set : store data, but without duplicates and order of storage is not important.
+{100, "hanish", True}
+- can apply set theories to this data type
+- like union, intersection etc.
+
+12. frozen set : same as set but immutable/cannot be modified
+13. dictionary : to store data as mapping to another data
+famously known as "KEY-VALUE PAIRS"
+- key can be any data type, which are immutable like string, int, float, boolean etc.
+- keys cannot be duplicate, they are only one
+- value also can be any data type
+
+ex:
+{
+	"hello" : "world",
+	"instagram" : "password"
+}
+
+14. None : This is actually used to represent NO_DATA or NULL or NOTHING or NOT YET ASSIGNED or NOT YET AVAIABLE
+
+marksList=None
+
+
+Functions:
+- a block of python code or a group of instructions which perform a particular task
+- this type of block inside python can be used or written again and again or used again and again
+- but, it will simple increase the lines of code, or create a same copy of the block, so 
+to identify this group of instructions with a name and use that name to refer to that block , we use functions
+- we can access that block of code or group of instrcutions by just specifying the function name
+
+ex:
+I am printing the following 3 lines to greet 3 things
+but to do the same again, i need to write all 3 same to same statements again, which is simply taking space and duplicated.
+
+print("hello chethan")
+print("hello hanish")
+print("hello python")
+
+print("hello chethan")
+print("hello hanish")
+print("hello python")
+
+print("hello chethan")
+print("hello hanish")
+print("hello python")
+
+Instead i can group this 3 lines inside a function code/block and use function name to execute those 3 statement, this will help me RE-USE the existing or one-time defined code or statements or instructions
+- Define Once, Use many times.
+
+Rules to define a function:
+
+- def => this keyword (reserved word ) is used to tell the python interpreter that the upcoming identifier or block is going to be a function.
+- the function definition is then, only, read, instead of executing.
+- python will just read it and store in memory
+- python will execute this only when code has actually called this function or mentioend this function name in the statement/instructions
+- the actual execution statement of this function is called "Function Call"
+
+
+Ex:
+
+def <name of function/identifier>():
+	<statemetn1>
+	<statemetn1>
+	<statemetn1>
+	<statemetn1>
+	<statemetn1>
+	<return <data>> # optional
+
+ex:
+
+# function definition, this will only be READ not Executed.
+def calculate_speed():
+	distance=10
+	time_taken=5
+	speed=(distance/time_taken)
+	return speed
+
+# function call , this will be executed from where the function is stored in memory
+calculate_speed()
+
+Types:
+
+1. user defined : user writes own functions to do some job
+ex: calculate_speed(), calculate_time() etc.
+
+2. in built  - python already has built in functions to perform speciific tasks
+
+print() -> prints your data on monitor screen
+id() -> gets you the storage location ID of your variable specified
+type() -> gets you the data type of variable specified.
+
+like this we will have many functions which we can use when we want to perform some activities based on our software requirements.
