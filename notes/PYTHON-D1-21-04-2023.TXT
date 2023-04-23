@@ -1,0 +1,120 @@
+PYTHON-D1-21-04-2023.TXT
+
+Computers -> Machine which performs task which humans cant' do quickly
+
+- Commands/Instructions Given to computer by humans to perform tasks
+
+- to instruct or communicate with anybody we need Langauge
+
+- to communicate and get work done by computer we need a laguage
+
+- That type of language is called programming
+
+- We write commands/program which will be translated to a computer 
+- then computer will perform requested task
+
+- the process of translating human instructions in human-friendly language (english) to computer-friendly language(binary), is called Compilation/Interpretation.
+
+- Types of Programming Languages
+1. Compiled languages
+	- First read all the given instrcutions (programs)
+	- then validate the syntax/format of the entire program
+	- If everything is good, then start execution
+
+- It needs a compiler (translator from english to binary)
+ - Validates the given program
+ - highlights syntax errors
+ - Creates an executable file if the program is validated correctly
+
+Known errors : 
+
+1. Syntax error : any mistake in the format of writing a program
+2. Logical Error  : any mistake in the way the program flow is written -> BUG
+3. Run time error : any error which occurs only during the execution of the program. -> CRASH
+
+- C - C Compiler 
+- C++ 
+- java - JRE, JDK
+
+2. Interpreted Languages
+	- pickup first line of the program, execute it
+	- pickup next line, execute it
+	- if the current is broken or contains any error, stop the execution
+
+- Require interpreter
+ - read the first of the program
+ - start executing
+ - during execution it will check syntax, logical error, run time errors
+ - the program stops of any line is not correct
+
+ Ex:
+
+ - Python
+ - perl
+ - html
+ - shell script
+ - Ruby
+
+1. Python Programming
+
+Any language  Vs Python
+==========================
+ - Structure - Format
+ - How to Speak - how to Execute
+ - Alphabets - tokens
+ - Words - Identifiers, Variables
+ - Sentences - Statements, instructions
+ - Grammar - Syntax
+ - Paragraphs - Blocks, Functions etc
+ - Vocabulary - Libraries
+
+Structure Of Python : 
+
+1. The program must be written in a text file with name ending with .py extension.
+
+ex: hello_world.py
+
+2.  inside this python file, the format of python code is arranged in below way :
+
+1. import statements (optional, if required use)
+2. statements
+3. global variables
+4. statements
+5. function definitions
+6. statements
+
+ex:
+
+hello_world.py
+print('Hello World')
+
+We have diff ways to Edit python code:
+
+1. Text editor - only edit the code
+2. IDLE (python's own interpreter+text editor) - edit + run
+3. IDE - edit + run + debug + build entire project
+(integrate development environment)
+
+How to execute?
+
+1. using command line 
+
+> python hello_world.py
+
+2. using IDLE 
+
+you can run the python file u edited inside IDLE itself
+
+3. using IDE 
+
+- you can run the python file inside the IDE using GUI options
+
+4. Some text editors have plugins to run python code
+like sublime : using ctrl+B
+
+5. REPL.it : online editor + python interpreter
+https://www.programiz.com/python-programming/online-compiler/
+programiz
+
+When to use ? : when u want to quickly try out some python code without need to setup or configure python in ur local.
+you can execute on your phone browser as well
