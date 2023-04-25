@@ -1,0 +1,110 @@
+PYTHON-D3-25-04-2023.TXT
+=========================
+Statements/Instructions
+
+Every executable line in the code, we can call as "Statement".
+This statement when executed, performs some task or fetches some value.
+
+Statements include the following:
+
+1. Operators and Operations
+	- Types of operations we can perform in python
+	- Arithmetic
+	- Relational
+	- Logical
+	- Assignment
+	- Special Ops
+
+2. Flow-Control/Conditional/Branching/Decision Making Instructions/Statments
+	- if statements
+	- if-else statements
+	- if-elif statements
+	- if-elif-else statements
+	- pass
+3. Iterative or Looping Statements
+	- while loop
+	- for loop
+4. Functions
+	- user defined function
+	- built in functions
+	- third-party/library functions
+	- function calls
+	- recursion / recursive functions
+5. Error Handling
+	- Exception Handling
+	- try-catch-except-finally blocks
+6. File Handling
+	- File Reading
+	- File Writing
+	- Handling Files in OS
+
+====================================
+1. Operators and Operations
+	- Types of operations we can perform in python
+	- Arithmetic
+	- Relational
+	- Logical
+	- Assignment
+	- Special Ops
+
+Operator : is an element in a statement which performs some operation on the given objects(called as operands)
+
+like, adding two numbers is an operation
+
+10+2
+
+add-> is operation
++ -> operator
+two numbers -> operands
+
+1.1 Arithmetic Operators
+
++ -> add
+- -> minus
+* -> Multiply
+/ -> floating point division -> gives quotient of division
+% -> gives remainder of division
+
+	 fact:
+	  if the numerator is less than denominator, then blindly you can write modulus result as numerator
+
+	  10 % 11 = 10
+	  11 % 10 = 1
+
+// -> Floor Division / INTEGER DIVISION
+** -> Exponent operator or TO THE POWER operator
+		x^y 
+
+
+NOTE: Comment the code:
+
+Comment lines are used to give quick info about the code or any statment
+
+there are 2 ways to write comments in python
+
+1. Single Line Comment : # is used to denote this
+2. Multi Line comment:
+
+we can use ''' ''' (three quotes) or """ """ (three double quotes) to write multi line comments
+
+Comments will not be executed by interpreter
+it is just for developer documentation
+
+ex:
+
+
+# this is a single comment
+
+'''
+This is Multi
+Line
+Comment
+'''
+
+"""
+Here is also 
+an example
+of multi
+line
+comment
+"""
