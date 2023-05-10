@@ -29,11 +29,17 @@ Statements include the following:
 	- built in functions
 	- third-party/library functions
 	- function calls
+	- function arguments & parameters
 	- recursion / recursive functions
-5. Error Handling
+	- Input / Output functions
+	- command line arguments
+	- Environment Variables
+5. Data types
+6. Modules & Packages
+7. Error Handling
 	- Exception Handling
 	- try-catch-except-finally blocks
-6. File Handling
+8. File Handling
 	- File Reading
 	- File Writing
 	- Handling Files in OS

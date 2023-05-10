@@ -1,0 +1,224 @@
+PYTHON-D5-10-05-2023.TXT
+
+Operators Continued..
+
+=> Assignment Operators:
+=========================
+
+When we wish to assign or input or load a value or data into a variable, we use assignment operators.
+
+The basic assignment operator is "=" 
+
+Syntax:
+
+<variable_name>=<value>
+
+Ex:
+
+speed_of_train=100.00
+
+- There are different combinations of = operator along with other operators to extend it's functionality.
+
+
+ex:
+
+1. add and assign  (+=)
+
+<variable>+=<value> 
+
+This will first
+1. add the original or previous value or current value of the variable with the given value and then assigns the final result back to the same variable.
+
+sum_of_two_numbers=10 
+
+sum_of_two_numbers+=10
+
+
+Previous value of the variable sum_of_two_numbers is 10
+
+now, the new value (10) will be added to the previous value of the variable sum_of_two_numbers (10), final result 20 will be assigned back to sum_of_two_numbers variable.
+
+this is as good as writing :
+
+sum_of_two_numbers = sum_of_two_numbers + 10
+
+This type of operation : is also called as short-hand notation
+
+2. subtract and assign (-=)
+
+subtracts the new value with original value and assigns result back to same variable.
+
+ex:
+
+bank_balance-=withdraw_amount 
+# as good as bank_balance = bank_balance - withdraw_amount
+
+Similarly we have other combinations :
+
+*= (multiply and assign)
+/= (multiply and assign)
+%= (multiply and assign)
+//= (multiply and assign)
+**= (multiply and assign)
+and many more.
+
+Code Examples:
+
+velocity_value=10 #assignment
+print(velocity_value)
+
+velocity_value+=100 #add and assign
+print(velocity_value)
+
+velocity_value-=100 #minus and assign
+print(velocity_value)
+
+velocity_value*=10 # multiply and assign
+print(velocity_value)
+
+velocity_value/=10 #divide and assign
+print(velocity_value)
+
+
+=> Ternary/Conditional Operators:
+================================
+
+which have multiple or more than 2 operands/operators combination
+
+Syntax:
+
+variable_value = first_value if <condition> else second_value
+
+ex:
+
+Max of 2 numbers:
+
+number1=10
+number2=100
+
+max_number = number1 if (number1>number2) else number2
+
+print("The max number is = ", max_number)
+
+ex:
+
+max of 3 numbers:
+
+number1=10
+number2=100
+number3=1000
+
+max_number = number1 if ((number1>number2) and (number1>number3)) else number2 if (number2 > number3) else number3
+
+print("The max number is = ", max_number)
+
+=> SPECIAL OPERATORS:
+======================
+
+1. Identity Operators:
+	is
+	is not
+
+These operators are used to find the identity of a variable in the program.
+
+usage: used to find if the variable is pointing to certain memory location or not
+
+if variable1 and variable2 are pointing to same location, then "is" operator will return True, else False.
+
+The diff between is and == :
+
+is compares memory location
+== compares contents
+
+ex:
+
+a=10
+b=10
+
+result = a is b
+print(result)
+a=None
+
+result = a is None
+print(result)
+
+result = a is not None
+print(result)
+
+a = 1000
+result = a is not None
+print(result)
+
+Note: "is not" is the best way to find out if any variable contains data inside it or not
+
+
+2. Membership Operators:
+	in
+	not in
+
+This is used especially to fing if any item is present or is a member of any collection or not.
+
+in - returns True if item is present in the collection
+not in - returns True if item is not present
+
+ex:
+
+voter_list=["Chethan", "Hanish", "John"]
+result= "Raghav" in voter_list
+print(result)
+result= "Raghav" not in voter_list
+print(result)
+
+result= "Chethan" in voter_list
+print(result)
+
+=> Operators Precedence:
+=========================
+Which operator is given highest priority while executing.
+
+The following order is maintained while executing or resolving or processing operators during python execution:
+
+1. () - Parenthesis
+2. ** - exponent
+3. - negetivity operator
+4. *, /, % , //
+5. +, - plus and minus
+6. > , >=, <, <=, ==, !=
+7. =, +=, -=, *=
+8. is, is not
+9. in, not in
+10. not
+11. and
+12. or
+
+ex:
+
+a=30
+b=20
+c=10
+d=5
+
+result = (a+b) * (c+d)
+print(result)
+
+result = (a+b) * c/d
+print(result)
+
+d=50
+result = (a+b) * c/d
+print(result)
+
+d=5
+result = a+(b*c)/d
+print(result)
+
+use of parenthesis:
+if possible to avoid confusion, use parenthesis() to group your operations.
+
+ex:
+
+result = 3/2*4+3+10/5**3
+print(result)
+
+result = (3/2)*((4+3+10)/(5**3))
+print(result)
