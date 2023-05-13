@@ -1,0 +1,187 @@
+PYTHON-D6-13-05-2023.TXT
+
+To make decisions based on some conditions, python will decide what flow to execute or what block or instructions to execute.
+
+Flow-Control/Conditional/Branching/Decision Making Instructions/Statments
+	- if statements
+	- nested statements
+	- if-else statements
+	- if-elif statements
+	- if-elif-else statements
+
+if- statement:
+
+if is a keyword used to evaluate any condition or data and execute the code if the condition is True else skip it.
+
+Syntax:
+
+if <condition>:
+	stmt1
+	stm2
+	stm3
+	..
+	..
+	..
+
+other-statment
+
+ex:
+
+a = 10
+if a>5:
+	print(a)
+	print("This is if block.")
+
+print("This is regular statement after if")
+
+b=20
+if a and b:
+	print("a = ", a)
+	print("b = ", b)
+
+Nested - if - statement:
+
+if we want to check or include multiple levels of decision making withing decision making statments, we can use nested statements.
+
+Syntax:
+
+if <condtion1>:
+	stm1
+	stm2
+	if <condtion2>:
+		stm3
+		stm4
+		..
+		..
+	stm5
+	stm6
+	if <condtion3>:
+		stm7
+		stm8
+		..
+		if <condtion4>:
+			stm9
+			stm10
+
+ex:
+
+# grading system
+
+marks=99
+
+if marks > 33:
+	print("Pass")
+	if marks > 60:
+		print("With First Class")
+		if marks > 90:
+			print("And Distinction")
+			if marks > 95:
+				print("Congratulations!")
+
+
+
+
+if-else statement:
+
+if we have any alternative operations, incase our decision making doesnt qualify, we use "else" statment to execute those alternative statements.
+
+syntax:
+
+if <condtion>:
+	stm1
+	stm2
+else:
+	stm3
+	stm4
+
+Note:
+1. else should always have its associated if statement
+2. without if else cant be written
+3. else block also can contain if-else statements
+
+Nested if-else:
+
+if condtion:
+	stm1
+	if condtion:
+		stm4
+	else:
+		stm5
+else:
+	stm2
+	if condtion:
+		stm6
+		stm7
+		if condtion:
+			stm10
+		else:
+			stm11
+	else:
+		stm8
+		stm9
+
+ex:
+
+# print grades based marks
+
+marks = 90
+
+if (marks >= 90 and marks <= 100):
+	print("A Grade")
+
+if (marks >= 60 and marks <= 90):
+	print("B Grade")
+
+if (marks >= 45 and marks <= 60):
+	print("C Grade")
+
+if (marks >= 30 and marks <= 45):
+	print("D Grade")
+else:
+	print("This Person has FAILED with F grade.")
+
+
+else-if-statements:
+when we want to execute any other condition before finally concluding the decision making, we use "else-if" type of statements.
+
+else-if is written as "elif" in python.
+
+syntax:
+
+if condtion:
+	stm1
+elif condtion:
+	stm2
+else:
+	stm3
+
+elif-ladder-concept:
+
+if condtion:
+	stm1
+elif condtion:
+	stm2
+elif condtion:
+	stm3
+elif condtion:
+	stm4
+else:
+	stm5
+
+Note: elif must have an if statement.
+elif ladder also can be nested.
+
+ex:
+
+marks = 95
+
+if (marks >= 90 and marks <= 100):
+	print("A Grade")
+elif (marks >= 60 and marks <= 90):
+	print("B Grade")
+elif (marks >= 45 and marks <= 60):
+	print("C Grade")
+elif (marks >= 30 and marks <= 45):
+	print("D Grade")
+else:
+	print("This Person has FAILED with F grade.")
