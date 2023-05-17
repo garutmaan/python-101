@@ -1,0 +1,145 @@
+PYTHON-D8-17-05-2023.TXT
+
+Functions
+	- user defined function
+	- built in functions
+	- third-party/library functions
+	- function calls
+	- function arguments & parameters
+	- recursion / recursive functions
+	- Input / Output functions
+	- command line arguments
+	- Environment Variables
+
+FUNCTIONS:
+==========
+A block of code which performs specific task.
+
+it provides ease of use and re-use, for developer.
+
+stm1
+stm2
+smt2
+
+
+stm1
+stm2
+smt2
+
+
+stm1
+stm2
+smt2
+
+Drawbacks of using block of same instructions again and again:
+
+1. Need to write many lines again and again
+2. headache of multiple changes at multiple places in the code
+3. no option to identify these blocks
+
+functions : a named block of code, which can be referred just by using it's name in the code anywhere to get some specific task done.
+
+
+1. definition : this is a format of introducing or creating a new function/functionality inside a code.
+2. declaration : This is to specify the format or skeleton of a function.
+3. call/usage : this is when we actually use the function in code.
+
+function ==> machine ==> does some job for you
+
+Syntax:
+
+def function_name():		# this is function definition
+	stm1
+	stm2
+	stm3
+
+stm4
+stm5
+stm6
+
+function_name() # this is a function call
+
+stm7
+stm8
+
+Terminologies:
+1. arguments : inputs which a function may require for execution
+2. parameters : placeholders for the inputs which function may require
+	- formal - placeholders, defined at function level
+	- actual - are the actual data, or variables sent during the function call
+
+3. return values : an output, if at all, a function wants to return to the caller
+
+Syntax: with arguments/parameters
+
+def function_name(var1, var2, var3):
+	sum = var1 + var2 + var3
+
+	return sum
+
+def function_name(name):
+	print("Hello ", name)
+
+def function_name():
+	var = 100
+	var1 = var + 10
+
+	return var1
+
+sum_of_three = function_name(1,2,3)
+
+function_name("hanish")
+
+var1 = function_name()
+
+=> TYPES OF FUNCTIONS:
+=======================
+
+1. User Defined : functions built or developed by programmers
+
+2. System Defined/Inbuilt/Library Functions : functions which are present or come along with Python language or are developed by people other than actual developers, mostly service providers of Python/Python Community/Third party, to help developers, use existing functionalities without need to develop them from scratch.
+
+User Defined Functions:
+
+ex:
+
+def sum_of_two(var1, var2):
+	sum = var1 + var2
+
+	return sum
+
+
+def sum_of_two(var1, var2):
+	return (var1 + var2)
+
+a = 10
+b = 12
+
+result = sum_of_two(1, 2)
+result = sum_of_two(a, b)
+
+NOTE:
+
+D-R-Y : DONT REPEAT YOURSELF
+
+1. always see possibility of re-using same component
+2. optimize whenever there is a chance
+3. automate
+
+SCOPE OF VARIABLE IN FUNCTIONs:
+
+scope : the life of a variable in code or the ability to access a variable in code
+
+1. global : global variables are available for entire code
+2. local : local variables are defined and used inside a function block and will be useless after the block is completed.
+
+
+a =10
+x = 10
+
+if x > 5:
+	b = 11
+
+print(a)
+print(x)
+print(b)
